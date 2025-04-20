@@ -1,5 +1,5 @@
 # Generate SSH Keys
-> Please note that the following actions need to be performed only once. In future, the same setup maybe useful while you setup other projects.
+> Please note that the following actions need to be performed only once. In the future, this setup may also be useful when setting up other projects.
 
 ## Prerequisites
 No prerequisites as such.
@@ -31,6 +31,14 @@ You should be seeing `id_ed25519` and `id_ed25519.pub` files in your `~/.ssh` di
 ```
 ls ~/.ssh
 ```
+
+## Step-4: Using SSH Keys
+Get Public key contents by running:
+```
+cat ~/.ssh id_ed25519.pub
+```
+
+Then, login to your Github account and add this ssh key at https://github.com/settings/keys.
 
 ## References
 1. [Generate new SSH Keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)

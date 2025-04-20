@@ -1,11 +1,11 @@
 # Drupal Setup (Using DDEV)
 
-> Please note that the following actions need to be performed only once. In future, the same setup maybe useful while you setup other projects.
-
 ## Prerequisites
-No prerequisites as such.
+1. Make sure Docker is running.
 
-## Installation Steps
+## Installation Steps (One Time)
+> Please note that the following actions need to be performed only once for this project.
+
 Run below commands in sequence.
 
 ```
@@ -26,6 +26,16 @@ ddev composer require drush/drush
 ```
 ddev drush site:install -y
 ddev drush uli
+ddev describe
+ddev launch
+```
+
+## Work Resumption
+> Regular commands to execute when resuming work on this project.
+
+```
+cd project-name
+ddev start
 ddev describe
 ddev launch
 ```
